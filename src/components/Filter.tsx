@@ -1,4 +1,4 @@
-import { upperCaseFirstLetter } from "@/lib/utils";
+import { uppercaseFirstLetter } from "@/lib/utils";
 import Image from "next/image";
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 export const Filter: React.FC<Props> = ({ filterName, titleName }) => {
   return (
     <div className="flex items-center justify-between">
-      <h2 className="font-[500]">{upperCaseFirstLetter(titleName)}</h2>
+      <h2 className="font-[500]">{uppercaseFirstLetter(titleName)}</h2>
 
       <button className="flex items-center gap-[8px] py-[8px] px-[12px] border border-[#D0D5DD] rounded-[8px] cursor-pointer">
         <Image

@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function upperCaseFirstLetter(strs: string) {
+export function uppercaseFirstLetter(strs: string) {
   return strs
     .split(" ")
     .map((str) => {

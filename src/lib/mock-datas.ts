@@ -138,3 +138,36 @@ export const materials = [
     quantity: 4,
   },
 ];
+
+export const plans = [
+  {
+    product: "Áo ba lỗ",
+    plan: 60,
+    actual: 40,
+    id: "15c8e6f4-96g3-4d0f-0f9e-11f5c7a8d9e0",
+  },
+  {
+    product: "Áo sơ mi",
+    plan: 100,
+    actual: 60,
+    id: "2a9b7d1c-3e8f-4g5h-6i7j-8k9l0m1n2o3p",
+  },
+  {
+    product: "Áo thun polo",
+    plan: 80,
+    actual: 20,
+    id: "4b6c8d0e-2f4g-6h8i-0j2k-4l6m8n0o2p4q",
+  },
+  {
+    product: "Quần baggy",
+    plan: 70,
+    actual: 45,
+    id: "6c8d0e2f-4g6h-8i0j-2k4l-6m8n0o2p4q6r",
+  },
+  {
+    product: "Quần jogger",
+    plan: 90,
+    actual: 60,
+    id: "8d0e2f4g-6h8i-0j2k-4l6m-8n0o2p4q6r8s",
+  },
+];
