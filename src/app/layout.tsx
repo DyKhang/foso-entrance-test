@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Lexend_Deca } from "next/font/google";
 import "./globals.css";
+import { Lexend_Deca } from "next/font/google";
 
 const font = Lexend_Deca({
   variable: "--font-lexend-sans",
   subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "300", "600"],
+  weight: ["400", "500", "300", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className}  antialiased`}>{children}</body>
+      <body
+        className={`${font.className}  antialiased text-[#141522] bg-white/40 pb-[50px]`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

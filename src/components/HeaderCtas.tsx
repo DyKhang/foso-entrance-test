@@ -1,9 +1,10 @@
+import { AvatarDropdown } from "@/components/AvatarDropdown";
 import { SearchBar } from "@/components/SearchBar";
 import Image from "next/image";
 
 const icons = ["settings", "shapes", "message", "bell", "question"];
 
-export const HeaderCTA = () => {
+export const HeaderCtas = () => {
   return (
     <div className="flex items-center gap-[24px]">
       <SearchBar />
@@ -27,22 +28,7 @@ export const HeaderCTA = () => {
         ))}
       </div>
 
-      <div className="flex items-center gap-[10px] cursor-pointer">
-        <Image
-          alt="logo"
-          height={40}
-          width={40}
-          src="/logo.jpg"
-          className="rounded-full"
-        />
-
-        <Image
-          src="/icons/arrow-down.svg"
-          alt="arrow-down-icon"
-          width={10}
-          height={10}
-        />
-      </div>
+      <AvatarDropdown />
     </div>
   );
 };

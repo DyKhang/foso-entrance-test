@@ -1,4 +1,4 @@
-import { HeaderCTA } from "@/components/HeaderCTA";
+import { HeaderCtas } from "@/components/HeaderCtas";
 import { Logo } from "@/components/Logo";
 import { Navbar } from "@/components/Navbar";
 
@@ -11,7 +11,7 @@ export const Header = () => {
       </div>
 
       <div className="ml-auto">
-        <HeaderCTA />
+        <HeaderCtas />
       </div>
     </header>
   );

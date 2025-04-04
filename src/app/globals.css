@@ -114,9 +114,39 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 box-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* .box-shadow {
+    box-shadow: 0 0 2px 0 #919eab33;
+  } */
+
+  .box-shadow {
+    @apply shadow-md;
+  }
+
+  .table-layout {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d0cece;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d0cece;
   }
 }
