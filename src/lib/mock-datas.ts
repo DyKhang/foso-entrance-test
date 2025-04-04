@@ -1,3 +1,4 @@
+// Top Sản Phẩm Sản Xuất Nhiều Nhất
 export const statistics = [
   {
     id: "a1b2c3d4-e5f6-7890-ab12-cd34ef567890",
@@ -31,6 +32,7 @@ export const statistics = [
   },
 ];
 
+// Nguyên Vật Liệu Cần Mua
 export const materials = [
   {
     id: "1e8f5d7a-001a-4b2b-9a6c-14e2c5b8e7f1",
@@ -139,6 +141,7 @@ export const materials = [
   },
 ];
 
+// Kế Hoạch Sản Xuất
 export const plans = [
   {
     product: "Áo ba lỗ",

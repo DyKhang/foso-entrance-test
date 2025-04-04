@@ -33,10 +33,27 @@ export const PlanChart = () => {
         <XAxis
           dataKey="product"
           tickLine={false}
-          tickMargin={5}
+          tickMargin={12}
           axisLine={false}
+          label={{
+            value: "Mặt hàng",
+            position: "insideBottomRight",
+            dy: 0,
+            dx: -590,
+          }}
         />
-        <YAxis tickLine={false} tickMargin={12} axisLine={false} />
+        <YAxis
+          tickLine={false}
+          tickMargin={12}
+          axisLine={false}
+          label={{
+            value: "Cái",
+            position: "insideBottomRight",
+            dy: -320,
+            dx: -10,
+          }}
+          tickCount={6}
+        />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend content={<ChartLegendContent />} verticalAlign="top" />
         <Bar dataKey="plan" fill="var(--color-plan)" radius={4} barSize={20} />

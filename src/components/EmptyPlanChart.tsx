@@ -55,8 +55,25 @@ export const EmptyPlanChart = () => {
           tickLine={false}
           tickMargin={5}
           axisLine={false}
+          label={{
+            value: "Mặt hàng",
+            position: "insideBottomRight",
+            dy: 0,
+            dx: -590,
+          }}
         />
-        <YAxis tickLine={false} tickMargin={12} axisLine={false} />
+        <YAxis
+          tickLine={false}
+          tickMargin={12}
+          axisLine={false}
+          label={{
+            value: "Cái",
+            position: "insideBottomRight",
+            dy: -320,
+            dx: -10,
+          }}
+          tickCount={6}
+        />
         <ChartLegend content={<ChartLegendContent />} verticalAlign="top" />
         <Bar dataKey="plan" fill="var(--color-plan)" radius={4} barSize={20} />
         <Bar

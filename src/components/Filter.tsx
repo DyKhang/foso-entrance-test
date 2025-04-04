@@ -18,7 +18,7 @@ export const Filter: React.FC<Props> = ({ filterName, titleName }) => {
           width={12}
           height={12}
         />
-        <span className="text-[#3A3E4C]">{filterName}</span>
+        <span className="text-[#3A3E4C] text-[14px]">{filterName}</span>
 
         <Image
           alt="arrow-down-solid-icon"
