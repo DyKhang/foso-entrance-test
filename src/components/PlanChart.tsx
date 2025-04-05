@@ -10,6 +10,7 @@ import {
   type ChartConfig,
 } from "@/components/ui/chart";
 import { plans } from "@/lib/mock-datas";
+import { AxisLabel } from "@/components/AxisLabel";
 
 const chartConfig = {
   plan: {
@@ -24,46 +25,40 @@ const chartConfig = {
 
 export const PlanChart = () => {
   return (
-    <ChartContainer
-      config={chartConfig}
-      className="min-h-[200px] w-full mt-[24px]"
-    >
-      <BarChart accessibilityLayer data={plans}>
-        <CartesianGrid vertical={false} strokeDasharray="2 2" />
-        <XAxis
-          dataKey="product"
-          tickLine={false}
-          tickMargin={12}
-          axisLine={false}
-          label={{
-            value: "Mặt hàng",
-            position: "insideBottomRight",
-            dy: 0,
-            dx: -590,
-          }}
-        />
-        <YAxis
-          tickLine={false}
-          tickMargin={12}
-          axisLine={false}
-          label={{
-            value: "Cái",
-            position: "insideBottomRight",
-            dy: -320,
-            dx: -10,
-          }}
-          tickCount={6}
-        />
-        <ChartTooltip content={<ChartTooltipContent />} />
-        <ChartLegend content={<ChartLegendContent />} verticalAlign="top" />
-        <Bar dataKey="plan" fill="var(--color-plan)" radius={4} barSize={20} />
-        <Bar
-          dataKey="actual"
-          fill="var(--color-actual)"
-          radius={4}
-          barSize={20}
-        />
-      </BarChart>
-    </ChartContainer>
+    <div className="relative">
+      <ChartContainer config={chartConfig} className="w-full">
+        <BarChart accessibilityLayer data={plans} margin={{ left: 14 }}>
+          <CartesianGrid vertical={false} strokeDasharray="2 2" />
+          <XAxis
+            dataKey="product"
+            tickLine={false}
+            tickMargin={12}
+            axisLine={false}
+          />
+          <YAxis
+            tickLine={false}
+            tickMargin={12}
+            axisLine={false}
+            tickCount={6}
+          />
+          <ChartTooltip content={<ChartTooltipContent />} />
+          <ChartLegend content={<ChartLegendContent />} verticalAlign="top" />
+          <Bar
+            dataKey="plan"
+            fill="var(--color-plan)"
+            radius={[4, 4, 0, 0]}
+            barSize={20}
+          />
+          <Bar
+            dataKey="actual"
+            fill="var(--color-actual)"
+            radius={[4, 4, 0, 0]}
+            barSize={20}
+          />
+        </BarChart>
+      </ChartContainer>
+      <AxisLabel className="top-[16px] left-[37px]">Cái</AxisLabel>
+      <AxisLabel className="bottom-0 left-[0]">Mặt hàng</AxisLabel>
+    </div>
   );
 };

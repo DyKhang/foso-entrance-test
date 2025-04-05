@@ -15,7 +15,7 @@ export const Table = () => {
       {!materials.length ? (
         <NoData />
       ) : (
-        <div className="flex-1 overflow-y-scroll mt-[50px]">
+        <div className="flex-1 overflow-y-scroll mt-[53px]">
           {materials.map((item, i) => (
             <TableItem key={i} index={i + 1} data={item} />
           ))}

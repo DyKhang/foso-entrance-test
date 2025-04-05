@@ -7,7 +7,7 @@ import { plans } from "@/lib/mock-datas";
 
 export const Plan = () => {
   return (
-    <Box>
+    <Box className="space-y-[24px]">
       <>
         <Filter filterName="Quý này" titleName="Kế hoạch sản xuất" />
 

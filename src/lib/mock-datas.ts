@@ -174,3 +174,27 @@ export const plans = [
     id: "8d0e2f4g-6h8i-0j2k-4l6m-8n0o2p4q6r8s",
   },
 ];
+
+// Top 5 khách hàng có sản lượng nhiều nhất
+export const tops = [
+  {
+    company: "Công ty Dệt may Happy Polla",
+    quantity: 3200,
+  },
+  {
+    company: "Công ty May mặc Saigon trendy",
+    quantity: 3000,
+  },
+  {
+    company: "Outlet Lemon squeeze",
+    quantity: 2900,
+  },
+  {
+    company: "Shop quần áo streetwear New",
+    quantity: 2900,
+  },
+  {
+    company: "Shop thời trang công sở Basic Office",
+    quantity: 2800,
+  },
+];

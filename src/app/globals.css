@@ -136,12 +136,8 @@
     @apply bg-background text-foreground;
   }
 
-  /* .box-shadow {
-    box-shadow: 0 0 2px 0 #919eab33;
-  } */
-
   .box-shadow {
-    @apply shadow-md;
+    @apply shadow-sm;
   }
 
   .table-layout {
@@ -178,5 +174,9 @@
 
   .empty-chart .recharts-rectangle {
     display: none;
+  }
+
+  .recharts-text.recharts-cartesian-axis-tick-value tspan {
+    fill: #9295a4;
   }
 }
