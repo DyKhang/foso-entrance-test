@@ -1,3 +1,5 @@
+"use client";
+
 import { Materials } from "@/components/Materials";
 import { ProductProgress } from "@/components/ProductProgress";
 import { ProductStatus } from "@/components/ProductStatus";

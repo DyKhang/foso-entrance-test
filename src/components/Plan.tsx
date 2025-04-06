@@ -1,11 +1,12 @@
 import { Box } from "@/components/Box";
 import { EmptyPlanChart } from "@/components/EmptyPlanChart";
 import { Filter } from "@/components/Filter";
-
 import { PlanChart } from "@/components/PlanChart";
-import { plans } from "@/lib/mock-datas";
+import { useData } from "@/hooks/useData";
 
 export const Plan = () => {
+  const { plans } = useData();
+
   return (
     <Box className="space-y-[24px]">
       <>

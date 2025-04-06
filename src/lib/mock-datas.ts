@@ -206,6 +206,7 @@ export const productStatus = [
   { status: "Hoàn thành", quantity: 5, fill: "#1FC583" },
 ];
 
+// Tiến Độ Sản Xuất Theo Nhóm
 export const progress = [
   { id: 1, product: "Áo sơ mi dài tay", quantity: 123, percentage: 50 },
   { id: 2, product: "Áo sơ mi cụt tay", quantity: 321, percentage: 75 },

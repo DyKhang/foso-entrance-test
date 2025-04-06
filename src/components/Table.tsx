@@ -1,8 +1,9 @@
 import { NoData } from "@/components/NoData";
 import { TableItem } from "@/components/TableItem";
-import { materials } from "@/lib/mock-datas";
+import { useData } from "@/hooks/useData";
 
 export const Table = () => {
+  const { materials } = useData();
   return (
     <>
       <div className="table-layout py-[16px] px-[20px] bg-slate-500/10 text-[#52575E] text-[12px] font-[600] w-full absolute left-0 top-[89.6px]">

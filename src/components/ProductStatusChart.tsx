@@ -10,7 +10,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 import { PieChartLegend } from "@/components/PieChartLegend";
-import { productStatus } from "@/lib/mock-datas";
+import { useData } from "@/hooks/useData";
 
 const chartConfig = {
   notDone: {
@@ -28,6 +28,8 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export function ProductStatusChart() {
+  const { productStatus } = useData();
+
   const total = React.useMemo(() => {
     return productStatus.reduce((acc, curr) => acc + curr.quantity, 0);
   }, []);

@@ -8,8 +8,8 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { tops } from "@/lib/mock-datas";
 import { AxisLabel } from "@/components/AxisLabel";
+import { useData } from "@/hooks/useData";
 
 const chartConfig = {
   quantity: {
@@ -19,6 +19,8 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export function TopsChart() {
+  const { tops } = useData();
+
   return (
     <div className="relative pt-[18px]">
       <ChartContainer config={chartConfig}>

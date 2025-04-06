@@ -1,3 +1,5 @@
+"use client";
+
 import { Plan } from "@/components/Plan";
 import { Tops } from "@/components/Tops";
 

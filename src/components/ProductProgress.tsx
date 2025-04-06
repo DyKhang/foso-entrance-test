@@ -1,9 +1,11 @@
 import { Box } from "@/components/Box";
 import { Filter } from "@/components/Filter";
 import { ProgressChart } from "@/components/ProgressChart";
-import { progress } from "@/lib/mock-datas";
+import { useData } from "@/hooks/useData";
 
 export const ProductProgress = () => {
+  const { progress } = useData();
+
   return (
     <Box className="h-[586px] flex flex-col gap-[24px] p-0 pb-[24px] pr-[10px]">
       <>

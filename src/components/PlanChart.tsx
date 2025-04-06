@@ -9,8 +9,8 @@ import {
   ChartTooltipContent,
   type ChartConfig,
 } from "@/components/ui/chart";
-import { plans } from "@/lib/mock-datas";
 import { AxisLabel } from "@/components/AxisLabel";
+import { useData } from "@/hooks/useData";
 
 const chartConfig = {
   plan: {
@@ -24,6 +24,8 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export const PlanChart = () => {
+  const { plans } = useData();
+
   return (
     <div className="relative">
       <ChartContainer config={chartConfig} className="w-full plan-chart">
