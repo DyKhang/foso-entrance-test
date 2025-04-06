@@ -7,7 +7,7 @@ export const ProductProgress = () => {
   const { progress } = useData();
 
   return (
-    <Box className="h-[586px] flex flex-col gap-[24px] p-0 pb-[24px] pr-[10px]">
+    <Box className="h-[586px] flex flex-col gap-[24px] p-0 pb-[24px] pr-[14px]">
       <>
         <div className="p-[24px] pr-[14px]">
           <Filter
@@ -16,7 +16,7 @@ export const ProductProgress = () => {
           />
         </div>
 
-        <div className="flex-1 overflow-y-scroll space-y-[32px] px-[24px]">
+        <div className="flex-1 overflow-y-scroll space-y-[32px] px-[24px] pr-[14px]">
           {progress.length
             ? progress.map((data) => (
                 <ProgressChart
