@@ -26,7 +26,7 @@ const chartConfig = {
 export const PlanChart = () => {
   return (
     <div className="relative">
-      <ChartContainer config={chartConfig} className="w-full">
+      <ChartContainer config={chartConfig} className="w-full plan-chart">
         <BarChart accessibilityLayer data={plans} margin={{ left: 14 }}>
           <CartesianGrid vertical={false} strokeDasharray="2 2" />
           <XAxis

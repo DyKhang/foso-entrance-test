@@ -48,7 +48,7 @@ export const EmptyPlanChart = () => {
     <div className="relative">
       <ChartContainer
         config={chartConfig}
-        className="min-h-[200px] w-full mt-[24px] empty-chart"
+        className="min-h-[200px] w-full mt-[24px] empty-chart plan-chart"
       >
         <BarChart accessibilityLayer data={placeholders} margin={{ left: 14 }}>
           <CartesianGrid vertical={false} strokeDasharray="2 2" />

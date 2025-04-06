@@ -198,3 +198,25 @@ export const tops = [
     quantity: 2800,
   },
 ];
+
+// Tình hình sản xuất
+export const productStatus = [
+  { status: "Chưa hoàn thành", quantity: 5, fill: "#FF8F0D" },
+  { status: "Đang sản xuất", quantity: 6, fill: "#0375F3" },
+  { status: "Hoàn thành", quantity: 5, fill: "#1FC583" },
+];
+
+export const progress = [
+  { id: 1, product: "Áo sơ mi dài tay", quantity: 123, percentage: 50 },
+  { id: 2, product: "Áo sơ mi cụt tay", quantity: 321, percentage: 75 },
+  { id: 3, product: "Quần baggy", quantity: 231, percentage: 45 },
+  { id: 4, product: "Quần tây", quantity: 999, percentage: 60 },
+  { id: 5, product: "Đầm maxi", quantity: 876, percentage: 90 },
+  { id: 6, product: "Áo hoodie", quantity: 765, percentage: 15 },
+  { id: 7, product: "Áo khoác bomber", quantity: 543, percentage: 24 },
+  { id: 8, product: "Váy xòe", quantity: 456, percentage: 35 },
+  { id: 9, product: "Áo len cổ lọ", quantity: 678, percentage: 80 },
+  { id: 10, product: "Quần jeans", quantity: 234, percentage: 55 },
+  { id: 11, product: "Áo thun", quantity: 890, percentage: 70 },
+  { id: 12, product: "Chân váy", quantity: 123, percentage: 40 },
+];

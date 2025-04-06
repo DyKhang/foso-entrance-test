@@ -11,9 +11,19 @@ export const Statistics = () => {
       />
 
       <div className="grid grid-cols-5 mt-[22px] gap-[24px]">
-        {statistics.map((item) => (
-          <Statistic key={item.id} data={item} />
-        ))}
+        {statistics.length
+          ? statistics.map((item) => <Statistic key={item.id} data={item} />)
+          : Array.from({ length: 5 }).map((_, i) => (
+              <Statistic
+                key={i}
+                data={{
+                  currentMonth: { quantity: 0 },
+                  id: "abc",
+                  previousMonth: { quantity: 0 },
+                  productName: "Không có dữ liệu",
+                }}
+              />
+            ))}
       </div>
     </section>
   );

@@ -137,7 +137,8 @@
   }
 
   .box-shadow {
-    @apply shadow-sm;
+    box-shadow: 0 12px 24px -4px rgba(145, 158, 171, 0.12),
+      0 0 2px 0 rgba(145, 158, 171, 0.2);
   }
 
   .table-layout {
@@ -162,11 +163,11 @@
     background: #d0cece;
   }
 
-  .recharts-legend-wrapper > div {
+  .plan-chart .recharts-legend-wrapper > div {
     justify-content: flex-end !important;
   }
 
-  .recharts-legend-wrapper > div > div > div {
+  .plan-chart .recharts-legend-wrapper > div > div > div {
     width: 27px !important;
     height: 13px !important;
     border-radius: 20px !important;
