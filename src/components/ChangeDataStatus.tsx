@@ -19,7 +19,9 @@ export function ChangeDataStatus() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button className="cursor-pointer">Thay đổi trạng thái dữ liệu</Button>
+        <Button className="cursor-pointer fixed bottom-8 z-10">
+          Thay đổi trạng thái dữ liệu
+        </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
